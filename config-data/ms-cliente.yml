@@ -10,7 +10,7 @@ spring:
   #   import: optional:configserver:http://localhost:8888
 
   datasource:
-    url: jdbc:mysql://localhost:3306/ms_cliente?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/ms-cliente?useSSL=false&serverTimezone=UTC
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
