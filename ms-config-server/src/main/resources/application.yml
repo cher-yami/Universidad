@@ -1,0 +1,17 @@
+#spring.application.name=ms-config-server
+server:
+  port: 7071
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/cher-yami/Universidad.git
+          searchPaths: config-data
+          default-label: main
+  security:
+    user:
+      name: root
+      password: 123456
