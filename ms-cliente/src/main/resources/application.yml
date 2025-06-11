@@ -1,7 +1,16 @@
 spring:
-  application:
-    name: ms-cliente
-  profiles:
-    active: development
-  config:
-    import: optional:configserver:http://root:123456@localhost:7071
+  datasource:
+    url: jdbc:mysql://localhost:3306/ms_cliente?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka
