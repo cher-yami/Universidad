@@ -15,7 +15,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/cher-yami/H2.git # ruta del repositorio git
+          uri: https://github.com/cher-yami/Universidad.git# ruta del repositorio git
           searchPaths: config-data
           default-label: main
   security:
